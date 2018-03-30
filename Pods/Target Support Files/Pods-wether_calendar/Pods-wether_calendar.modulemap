@@ -1,0 +1,6 @@
+framework module Pods_wether_calendar {
+  umbrella header "Pods-wether_calendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

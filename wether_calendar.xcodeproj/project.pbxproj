@@ -12,9 +12,12 @@
 		9C3C0194206E843000FDE94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3C0192206E843000FDE94B /* Main.storyboard */; };
 		9C3C0196206E843000FDE94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3C0195206E843000FDE94B /* Assets.xcassets */; };
 		9C3C0199206E843000FDE94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3C0197206E843000FDE94B /* LaunchScreen.storyboard */; };
+		A1446B44201910BBB2D03319 /* Pods_wether_calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EEE2C8FA32CEB98BA81323 /* Pods_wether_calendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C00EF529E09CE2FD1F16DE5 /* Pods-wether_calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wether_calendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-wether_calendar/Pods-wether_calendar.release.xcconfig"; sourceTree = "<group>"; };
+		70EEE2C8FA32CEB98BA81323 /* Pods_wether_calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wether_calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3C018B206E843000FDE94B /* wether_calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wether_calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3C018E206E843000FDE94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3C0190206E843000FDE94B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9C3C0195206E843000FDE94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C3C0198206E843000FDE94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3C019A206E843000FDE94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9FB1846156C3EA3A578FA7 /* Pods-wether_calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wether_calendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wether_calendar/Pods-wether_calendar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1446B44201910BBB2D03319 /* Pods_wether_calendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0968C73B2B0645431796A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FB1846156C3EA3A578FA7 /* Pods-wether_calendar.debug.xcconfig */,
+				0C00EF529E09CE2FD1F16DE5 /* Pods-wether_calendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9C3C0182206E843000FDE94B = {
 			isa = PBXGroup;
 			children = (
 				9C3C018D206E843000FDE94B /* wether_calendar */,
 				9C3C018C206E843000FDE94B /* Products */,
+				9B0968C73B2B0645431796A9 /* Pods */,
+				FBB424962B5A43C2CD79D9FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = wether_calendar;
 			sourceTree = "<group>";
 		};
+		FBB424962B5A43C2CD79D9FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70EEE2C8FA32CEB98BA81323 /* Pods_wether_calendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3C019D206E843000FDE94B /* Build configuration list for PBXNativeTarget "wether_calendar" */;
 			buildPhases = (
+				5F13CC59722E0373AC9305C0 /* [CP] Check Pods Manifest.lock */,
 				9C3C0187206E843000FDE94B /* Sources */,
 				9C3C0188206E843000FDE94B /* Frameworks */,
 				9C3C0189206E843000FDE94B /* Resources */,
+				81AF699EF167B7444E131002 /* [CP] Embed Pods Frameworks */,
+				39F6BB52DCB33AA88435CCD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39F6BB52DCB33AA88435CCD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wether_calendar/Pods-wether_calendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F13CC59722E0373AC9305C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81AF699EF167B7444E131002 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wether_calendar/Pods-wether_calendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C3C0187206E843000FDE94B /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		9C3C019E206E843000FDE94B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9FB1846156C3EA3A578FA7 /* Pods-wether_calendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		9C3C019F206E843000FDE94B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C00EF529E09CE2FD1F16DE5 /* Pods-wether_calendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
