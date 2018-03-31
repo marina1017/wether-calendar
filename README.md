@@ -16,12 +16,12 @@ $ rbenv --version
 rbenv 1.1.1
 
 
-#環境構築方法
+# 環境構築方法
 １このリポジトリをクローンする
 このファイルを入れたいディレクトリに移動してから下記コマンドを実行する
 
 ```
-$ git clone git@github.com:Nikkei/NikkeiPaperViewer.git
+$ git@github.com:marina1017/wether-calendar.git
 ```
 
 2.rbenvをインストール
