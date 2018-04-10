@@ -74,7 +74,9 @@ $ bundle init
 ```
 $ vi Gemfile
 ```
-Gemfileに以下を書きこむ
+cocoapodsを管理するためGemfileに以下を書きこむ
+vimは`i`を一度押すと記入できるようになる。以下をかきこみ終わったら`:wq`を入れてエンターを押す
+(wは書き込みqは終了です)
 ```
 source "https://rubygems.org"
 
@@ -83,14 +85,38 @@ gem "cocoapods", "1.2.0"
 
 9.gemfileを参照して、必要なgem(ここではcocoapods)を入れる
 ```
-bundle install --path Vendor/Bundler
+$ bundle install --path Vendor/Bundler
 ```
 
-10.プロジェクトファイルを開く
+10.ios開発のためのライブラリ管理ツールpodの準備をする
+まずはPodfileの作成
+```
+$ vi Podfile
+```
+Podfileの中身
+```
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'wether_calendar' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'FSCalendar', '~> 2.7.9'
+  # Pods for wether_calendar
+
+```
+
+11.Podfileに登録したライブラリをおとしてくる
+(bundlerでcocoapodを管理しているためpodのコマンドを使うときはbundle execを前につける必要がある)
+
+```
+$ bundle exec pod install
+```
+12.プロジェクトファイルを開く
 ```
 open wether_calendar.xcworkspace
 ```
 
-11.ビルドしてみる
+13.ビルドしてみる
 多分できるはず
 
