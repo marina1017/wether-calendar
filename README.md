@@ -64,16 +64,33 @@ $ rbenv rehash
 gem install bundler
 ```
 
-7.gemfileを参照して、必要なgem(ここではcocoapods)を入れる
+7.gemを管理するgemfileをつくる
+```
+$ bundle init
+```
+ここでコマンドを打った、ディレクトリにGemfileが作られる
+
+8.Gemfileの中身を記入 Gemfileを開く
+```
+$ vi Gemfile
+```
+Gemfileに以下を書きこむ
+```
+source "https://rubygems.org"
+
+gem "cocoapods", "1.2.0"
+```
+
+9.gemfileを参照して、必要なgem(ここではcocoapods)を入れる
 ```
 bundle install --path Vendor/Bundler
 ```
 
-8.プロジェクトファイルを開く
+10.プロジェクトファイルを開く
 ```
 open wether_calendar.xcworkspace
 ```
 
-9.ビルドしてみる
+11.ビルドしてみる
 多分できるはず
 
